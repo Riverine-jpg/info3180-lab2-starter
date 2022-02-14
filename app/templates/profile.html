@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile-container">
+    <body>
+        <header class ="phead">
+            <img src="{{url_for('static', filename ='Barry-B-Benson.png')}}" class = "circ" alt="circleme">
+            <div class="ptop">
+                <h1> <!--  {{ name }} --> Nathan Beecher</h1>
+                <p>@Dazed_and_afraid</p>
+                <p>Kingston,jamaica</p>
+                <p>{{format_date_joined()}}</p>
+            
+            </div>
+        </header>
+        <main class = "pmain">
+            <p class = "pdesc">"According to all known laws of aviation, there is no way that a bee should be able to fly. 
+                Its wings are too small to get its fat little body off the ground. The bee, of course, flies 
+                anyways. Because bees don't care what humans think is impossible.", The Bee Movie</p>
+            <div class = "pcontent">
+                <div class = "pposts">
+                    <h3> 68 </h3>
+                    <p>posts</p>
+                </div>
+                <div class = "pfollowing">
+                    <h3> 420 </h3>
+                    <p>Following</p>
+                </div>
+                <div class = "pfollowers">
+                    <h3> 5 </h3>
+                    <p>Followers</p>
+                </div>
+            </div>
+            <button class = "pfollow">Follow</button>
+        </main>
+    </body>   
+</div>
+{% endblock %}
